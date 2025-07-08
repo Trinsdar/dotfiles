@@ -1,3 +1,4 @@
+@import "mocha.css";
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -5,11 +6,12 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    color: #ffffff;
+    background: transparent;
+    background-color: @crust;
+    border-bottom: 1px solid @overlay1;
+    color: @overlay0;
     transition-property: background-color;
-    transition-duration: .5s;
+    transition-duration: .1s;
 }
 
 window#waybar.hidden {
