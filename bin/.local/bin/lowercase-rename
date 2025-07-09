@@ -1,0 +1,2 @@
+#!/bin/sh
+for file in *\\*; do target="${file//\\//}"; mkdir -p "${target%/*}"; mv -v "$file" "$target"; done

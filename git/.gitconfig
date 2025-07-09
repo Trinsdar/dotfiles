@@ -1,0 +1,17 @@
+[user]
+	name = trinsdar
+	email = 30245301+Trinsdar@users.noreply.github.com
+[filesystem "Private Build|1.8.0_222|/dev/sdb5"]
+	timestampResolution = 1001 microseconds
+	minRacyThreshold = 4881 microseconds
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+	pager = cat
+[advice]
+	addIgnoredFile = false
+[merge]
+	tool = meld

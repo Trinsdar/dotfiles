@@ -1,0 +1,57 @@
+/**
+ * @name Midnight UI
+ * @author Tropical#8908
+ * @version 2.6
+ * @description A clean, dark, and modern user interface for DiscordApp. Fully customizable through the theme file.
+ * @source https://github.com/tropix126/betterDiscordStuff/blob/master/midnight/base.css
+ * @website https://tropix126.github.io/BetterDiscordStuff/midnight/
+*/
+/*
+/$$      /$$ /$$       /$$           /$$           /$$         /$$
+| $$$    /$$$|__/      | $$          |__/          | $$        | $$
+| $$$$  /$$$$ /$$  /$$$$$$$ /$$$$$$$  /$$  /$$$$$$ | $$$$$$$  /$$$$$$
+| $$ $$/$$ $$| $$ /$$__  $$| $$__  $$| $$ /$$__  $$| $$__  $$|_  $$_/
+| $$  $$$| $$| $$| $$  | $$| $$  \ $$| $$| $$  \ $$| $$  \ $$  | $$
+| $$\  $ | $$| $$| $$  | $$| $$  | $$| $$| $$  | $$| $$  | $$  | $$ /$$
+| $$ \/  | $$| $$|  $$$$$$$| $$  | $$| $$|  $$$$$$$| $$  | $$  |  $$$$/
+|__/     |__/|__/ \_______/|__/  |__/|__/ \____  $$|__/  |__/   \___/
+                                         /$$  \ $$
+                                        |  $$$$$$/
+                                         \______/
+/Import Base CSS File*/
+@import url('https://tropix126.github.io/BetterDiscordStuff/midnight/css/base.css');
+/*Root*/
+:root {
+/*Primary Variables*/
+  --lv1:#00000f;
+  --accent:#135193;
+  --hover:#135193;
+  --lvl-bg-opacity:0.3;
+  --lvl-bg-fade:80%;
+
+/*Status Variables*/
+  --success: #11d85d;
+  --caution: #ffd104;
+  --danger: #e20b0b;
+  --unavailable: #636b75;
+  --invisible: rgba(0,234,255,1);
+  --information: #4a90e2;
+  --twitch-purple: #9146FF;
+  --spotify-green: #1DB954;
+  --xbox-green: #0e7a0d;
+  --netflix-red: #e50914;
+
+  --BetterDocsBlockerBlack1:var(--lv1);
+
+/*Roundness Variables*/
+  --user-roundness:0px;
+  --guilds-roundness:0px;
+
+/*SourceCheck*/
+  --sourcecheck-unsafe-embed-bg-dark:var(--lv1);
+  --sourcecheck-unsafe-shadow-tint-dark:var(--lv1);
+}
+
+.dividerContent-2L12VI {
+    color: #890101;
+}
