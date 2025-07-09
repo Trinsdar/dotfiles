@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if nvr --serverlist | grep -q "$NVIM_LISTEN_ADDRESS"; then
+    nvr --remote --servername "$NVIM_LISTEN_ADDRESS" "$@"
+else
+    exec nvim --listen "$NVIM_LISTEN_ADDRESS" "$@"
+fi
