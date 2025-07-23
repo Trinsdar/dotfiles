@@ -1,2 +1,7 @@
 os:
   shellFunctionsFile: ~/.aliases
+customCommands:
+  - key: 'F'
+    context: 'remotes'
+    command: 'git fetch --prune'
+    description: 'Fetch and Prune deleted branches'
