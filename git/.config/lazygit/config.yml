@@ -5,3 +5,7 @@ customCommands:
     context: 'remotes'
     command: 'git fetch --prune'
     description: 'Fetch and Prune deleted branches'
+  - key: 'D'
+    context: 'worktrees'
+    command: 'git worktree remove --force {{.SelectedWorktree.Path}}'
+    description: 'Force remove worktree'
