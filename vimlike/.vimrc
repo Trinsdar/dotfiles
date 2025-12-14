@@ -1,5 +1,8 @@
 set number
 set scrolloff=10
+set shiftwidth=4 smarttab
+set expandtab
+set tabstop=8 softtabstop=0
 :inoremap jk <Esc>
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
