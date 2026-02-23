@@ -1,6 +1,7 @@
 alias :q="exit"
 alias neofetch="fastfetch"
 alias icat="kitten icat"
+alias nvimdiff="nvim -d"
 
 #ls
 alias ls='eza -al --color=always --group-directories-first' # my preferred listing

@@ -14,4 +14,6 @@
 [advice]
 	addIgnoredFile = false
 [merge]
-	tool = meld
+	tool = nvimdiff
+[diff]
+	tool = nvimdiff
