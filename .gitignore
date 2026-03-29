@@ -1,3 +1,4 @@
 git/.config/lazygit/state.yml
 vencord/.config/Vencord/settings/quickCss.css
 /vimlike/.config/nvim-qt/window-geometry.conf
+/vimlike/.config/nvim/lazy-lock.json
