@@ -1,0 +1,7 @@
+hl.on("hyprland.start", function()
+	hl.exec_cmd("/usr/lib/pam_kwallet_init & kwalletd6")
+	hl.exec_cmd("hyprctl setcursor catppuccin-mocha-blue-cursors 28")
+	hl.exec_cmd("hyprpm reload -n")
+	hl.exec_cmd("ibus start --type wayland")
+	hl.exec_cmd("./fix-dolphin-context.sh")
+end)
