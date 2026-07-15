@@ -1,6 +1,6 @@
 source .vimrc
 
-set clipboard+=unnamed
+set clipboard+=unnamedplus
 set surround
 set nerdtree
 
