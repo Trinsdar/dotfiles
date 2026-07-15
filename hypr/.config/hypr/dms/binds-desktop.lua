@@ -1,11 +1,5 @@
-local mainMod = "SUPER"
-for i = 1, smw.get_amount_of_workspaces() do
-	local n = tostring(i)
-	if n == "10" then
-		n = "0"
-	end -- Optional if you configured 10 workspaces: bind workspace 10 to SUPER + 0
-	-- Switch to the Nth workspace on the currently focused monitor.
-	hl.bind(mainMod .. " +" .. n, smw.workspace(n))
-	-- Move the active window to the Nth workspace on the currently focused monitor silently (no focus change).
-	hl.bind(mainMod .. " + SHIFT +" .. n, smw.move_to_workspace(n))
+for i = 1, 10 do
+	local key = i % 10 -- 10 maps to key 0
+	hl.bind("SUPER + " .. key, hs.dsp.focus({ workspace = i }))
+	hl.bind("SUPER + SHIFT + " .. key, hs.dsp.window.move({ workspace = i, follow = false }))
 end
