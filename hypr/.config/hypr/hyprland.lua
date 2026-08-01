@@ -24,6 +24,7 @@ end)
 ---------------------
 
 require("apps")
+require("global_vars")
 
 -------------------
 ---- AUTOSTART ----
@@ -252,6 +253,11 @@ local suppressMaximizeRule = hl.window_rule({
 --     no_anim = true,
 -- })
 -- overlayLayerRule:set_enabled(false)
+
+-- Lua libraries
+if not isLaptop then
+	hs = require("hyprsplit")
+end
 
 -- DMS Include Configs
 require("dms.colors")
