@@ -264,5 +264,10 @@ require("dms.colors")
 require("dms.binds")
 require("dms.binds-user")
 require("dms.layout")
-require("dms.outputs")
 require("dms.windowrules")
+local status, value = pcall(require, "dms.outputs")
+if status then
+	print("successfully loaded module, it returned:", value)
+else
+	print("failed to load module, its error message was:", value)
+end
